@@ -3,7 +3,7 @@
  * @Autor: sj
  * @Date: 2021-11-16 10:57:27
  * @LastEditors: Please set LastEditors
- * @LastEditTime: 2021-11-20 11:01:32
+ * @LastEditTime: 2021-11-22 17:22:46
  */
 const ora = require('ora')//node.js命令行环境的loading效果，和显示各种状态的图标等
 const chalk = require('chalk')//命令行输出样式美化
@@ -21,7 +21,7 @@ async function dealwithTemplate(cmdMsg, projectName, targetPath, templatePath) {
   try {
     download(`direct:${url}`, templatePath, { clone: true }, async function (err) {
       if(err) {
-        fse.rmdir(templatePath)//下载失败删除模板
+        fse.rmdir(templatePath)//下载失败删除模板文件夹
         spinner.text = chalk.red(`Download template failed: ${err}`);
         spinner.fail()
         process.exit();
