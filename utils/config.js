@@ -34,7 +34,7 @@ module.exports = {
         {
           name: 'inforeH5Template',
           value: {
-            url: '',
+            url: 'https://github.com/besthotsj/mini-template.git',
             gitName: 'infore-h5',
             val: 'inforeH5Template'
           }
@@ -42,7 +42,7 @@ module.exports = {
         {
           name: 'inforeMiniTemplate',
           value: {
-            url: '',
+            url: 'https://github.com/besthotsj/mini-template.git',
             gitName: 'infore-mini',
             val: 'inforeMiniTemplate'
           }
